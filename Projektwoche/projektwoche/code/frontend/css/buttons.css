@@ -1,0 +1,61 @@
+
+.button,
+.submit {
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    padding: 8px 12px;
+    font-weight: bold;
+    color: var(--white);
+    text-decoration: none;
+    border: 2px solid transparent;
+    background-color: var(--green);
+}
+
+.button.rounded {
+    border-radius: 8px;
+}
+
+.button:hover,
+.submit:hover,
+.button_ghost:hover,
+.submit_ghost:hover {
+    box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.15)
+}
+
+.button_ghost,
+.submit_ghost {
+    color: var(--green);
+    background-color: transparent;
+    border: 2px solid var(--green);
+}
+
+.submit_setup {
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.submit_setup:hover {
+    cursor: pointer;
+    box-shadow: 3px 6px 20px rgba(0,0,0,0.15);
+}
+
+button.disabled,
+.button.disabled {
+    background-color: var(--grey--dark);
+}
+
+.button_ghost.disabled {
+    color: var(--grey--dark);
+    background-color: transparent;
+    border-color: var(--grey--dark);
+}
+
+.button.disabled:hover,
+.button_ghost.disabled:hover {
+    box-shadow: none;
+    cursor: not-allowed;
+}

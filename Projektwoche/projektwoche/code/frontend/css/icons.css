@@ -1,0 +1,29 @@
+.icon_close {
+    width: 32px !important;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid var(--green);
+}
+
+.icon_close:hover {
+    cursor: pointer;
+}
+
+.icon_close:before,
+.icon_close:after {
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    content: '';
+    height: 24px;
+    position: absolute;
+    background-color: var(--green);
+}
+
+.icon_close:before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.icon_close:after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}

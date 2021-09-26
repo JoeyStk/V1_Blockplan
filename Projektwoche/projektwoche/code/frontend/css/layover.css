@@ -1,0 +1,22 @@
+.layover {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    position: fixed;
+    background-color: rgba(0,0,0,0.85);
+}
+
+.layover_content {
+    margin: 0 auto;
+    margin-top: 50%;
+    width: max-content;
+    padding: 24px 32px;
+    transform: translateY(-100%);
+    background-color: var(--white);
+}
+
+.layover .input_label {
+    top: 8px;
+}
