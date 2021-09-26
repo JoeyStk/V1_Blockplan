@@ -1,0 +1,39 @@
+ul.tabs{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul.tabs li{
+    cursor: pointer;
+    background: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+ul.tabs li.current{
+    font-weight: bold;
+    position: relative;
+    color: var(--green);
+    border-bottom: 2px solid var(--green);
+}
+
+ul.tabs li.current:before {
+    left: 50%;
+    width: 3px;
+    content: '';
+    height: 3px;
+    bottom: -4px;
+    position: absolute;
+    transform: rotate(45deg);
+    border-right: 2px solid var(--green);
+    border-bottom: 2px solid var(--green);
+}
+
+.tab-content{
+    display: none;
+    padding: 15px 0;
+}
+
+.tab-content.current{
+    display: inherit;
+}

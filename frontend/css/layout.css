@@ -1,0 +1,53 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.position_relative {
+    position: relative;
+}
+
+.display--flex {
+    display: flex;
+}
+
+.row {
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-between;
+}
+
+.row > div {
+    width: 25%;
+    position: relative;
+}
+
+.row > div + div {
+    margin-left: 10px;
+}
+
+.row.button_group > div {
+    width: auto;
+}
+
+.line {
+    padding: 80px 0;
+    border-bottom: 2px solid var(--grey--light);
+}
+
+.margin_2 {
+    margin-top: 18px;
+}
+
+.margin_4 {
+    margin-top: 32px;
+}
+
+.margin_6 {
+    margin-top: 45px;
+}
+
+.margin_l_4 {
+    margin-left: 32px;
+}
