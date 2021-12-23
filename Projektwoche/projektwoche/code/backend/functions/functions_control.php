@@ -2,11 +2,10 @@
 
 
 function createsJSON(array $data) {
+    var_dump($data);
     $path = __DIR__ . '/../jsons/';
-    $hash = hash('md5', $data['name']);
-    $data['hash'] = $hash;
     $json_content = json_encode($data);
-    $filepath = $path . $hash . '.json';
+    $filepath = $path . $data['name'] . '.json';
     if (file_put_contents($filepath, $json_content)) {
         echo 'successfully created JSON';
     } else {

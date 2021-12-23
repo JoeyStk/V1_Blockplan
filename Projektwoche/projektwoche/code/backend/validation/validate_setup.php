@@ -2,7 +2,8 @@
 require '../functions.php';
 
 // $hash = isset($_GET['hash']);
-$hash = '1594179bb8e1f062351dcc4726b560d4';
+// %%ISSUE%%
+$name = '22_Blockplan';
 
 $setup = [];
 for ($i = 1; $i < 41; $i++) {
@@ -17,4 +18,4 @@ for ($i = 1; $i < 41; $i++) {
     $sub_array['comment_electro'] = $_POST['comment_electro_' . $i];
     array_push($setup, $sub_array);
 }
-editsJSON($hash, $setup);
+editsJSON($name, $setup);

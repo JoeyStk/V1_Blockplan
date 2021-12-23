@@ -1,6 +1,5 @@
 <?php 
-    require 'C:\xampp2\htdocs\projektwoche\projektwoche\code\backend\functions.php';
-    // require 'C:/xampp2/htdocs/projektwoche/code/backend/functions.php';
+    require 'C:\xampp\htdocs\Blockplan\projektwoche\projektwoche\code\backend\functions.php';
     $path = 'edit.php';
 ?>
 <!DOCTYPE html>
@@ -30,13 +29,17 @@
                     <div class="icon_close layover_close"></div>
                 </div>
                 <div class="row">
-                    <div>
-                        <label class="input_label">Titel</label>
-                        <input class="margin_2" type="text">
-                    </div>
-                    <div>
-                        <input class="margin_2 submit" type="submit" value="Bestätigen">
-                    </div>
+                    <!-- %%PATH%% (action)-->
+                    <form method="post" action="..\..\..\..\backend\validation\validate_create.php">
+                        <div>
+                            <label class="input_label">Titel</label>
+                            <input name="form_create_name" class="margin_2" type="text">
+                        </div>
+                        <div>
+                            <input class="margin_2 submit" type="submit" value="Bestätigen">
+                        </div>
+                        <span>Benennen: Blockplan 2021/22</span>
+                    </form>
                 </div>
             </div>
         </div>
